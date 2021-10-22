@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Name -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/name"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/editTextProfileEditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:hint="@string/Shorter_name"
+            android:singleLine="true"
+            android:maxLength="50"
+            android:inputType="textCapSentences"
+            android:minHeight="40dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Username -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/username"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextProfileEditUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:hint="@string/enter_username"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            android:inputType="textFilter|textCapSentences"
+            android:maxLength="21"
+            android:minHeight="20dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <!-- Job -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/job"
+            android:drawableStart="@drawable/ic_job"
+            android:drawableTint="@color/colorBlack"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextProfileEditJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890 ,.@-_*?!#$%^(){}[]/|\~`';:"
+            android:hint="@string/job_details"
+            android:maxLength="100"
+            android:minHeight="50dp"
+            android:inputType="textCapSentences"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Company -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/company"
+            android:drawableStart="@drawable/ic_company"
+            android:drawableTint="@color/colorBlack"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextProfileEditCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890 ,.@-_*?!#$%^(){}[]/|\~`';:"
+            android:hint="@string/company_details"
+            android:inputType="textCapSentences"
+            android:maxLength="100"
+            android:minHeight="50dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Education -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditEducation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/education"
+            android:drawableStart="@drawable/ic_education"
+            android:drawableTint="@color/colorBlack"
+            android:drawablePadding="5dp"
+
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextProfileEditEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890 ,.@-_*?!#$%^(){}[]/|\~`';:"
+            android:hint="@string/education_details"
+            android:inputType="textCapSentences"
+            android:maxLength="100"
+            android:minHeight="50dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- City -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/city"
+            android:drawableStart="@drawable/ic_city"
+            android:drawableTint="@color/colorBlack"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextProfileEditCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890 ,.@-_*?!#$%^(){}[]/|\~`';:"
+            android:hint="@string/city_details"
+            android:inputType="textCapSentences"
+            android:maxLength="100"
+            android:minHeight="50dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Website -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/website"
+            android:drawableStart="@drawable/ic_website"
+            android:drawableTint="@color/colorBlack"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextProfileEditWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890,.@-_*?!#$%^(){}[]/|\~`';:"
+            android:hint="@string/website_details"
+            android:maxLength="100"
+            android:minHeight="50dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- About -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/about"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:id="@+id/editTextProfileEditAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            emojicon:emojiconSize="28sp"
+            android:background="@color/colorWhite"
+            android:scrollbars="vertical"
+            android:hint="@string/about_section"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLength="150"
+            android:minHeight="100dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <!-- Account Type -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditAccountType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/account_type"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Buyer_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Buyer" />
+
+            <RadioButton
+                android:id="@+id/Seller_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Seller" />
+
+            <RadioButton
+                android:id="@+id/Renter_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Renter" />
+
+            <RadioButton
+                android:id="@+id/Shop_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Shop" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/Shop_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:textSize="15sp"
+            android:text="@string/Shop_info"/>
+
+    </LinearLayout>
+
+    <!-- Date of Birth -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProfileEditDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:padding="20dp"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+         <TextView
+            android:id="@+id/tvBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_today"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorAccent"
+            android:hint="@string/date_of_birth"
+            android:inputType="none"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

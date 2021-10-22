@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--  card view to hold all major details-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread"
+                    app:layout_constraintVertical_weight="1">
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/no_image"
+                            android:scaleType="centerCrop" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/swipe_shadow" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="0dp">
+
+                            <!-- Name, Nexus, city, education, website  -->
+                            <LinearLayout
+                                android:id="@+id/layoutTop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:layout_above="@+id/layoutBottom"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="30sp"
+                                        android:textStyle="bold"
+                                        tools:text="@tools:sample/full_names" />
+
+                                    <TextView
+                                        android:id="@+id/username"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:textColor="@color/colorWhite"
+                                        android:ellipsize="end"
+                                        android:textSize="23sp"
+                                        android:textStyle="bold"
+                                        tools:text=" @JaceMathewnnbbbbb" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/nexus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/nexus_mini"
+                                    android:drawablePadding="5dp"
+                                    android:gravity="start"
+                                    android:maxLines="1"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:text="@tools:sample/avatars" />
+
+                            </LinearLayout>
+
+                            <!-- city, education,job -->
+                            <LinearLayout
+                                android:id="@+id/layoutBottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:layout_above="@+id/settingsEditProfile"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/job"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/ic_job"
+                                    android:drawablePadding="5dp"
+                                    android:gravity="start"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="18sp"
+                                    tools:text="Software Developer" />
+
+                                <TextView
+                                    android:id="@+id/education"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:drawableStart="@drawable/ic_education"
+                                    android:drawablePadding="5dp"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="18sp"
+                                    tools:text="Geology and mineral science with mine" />
+
+                                <TextView
+                                    android:id="@+id/city"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:drawableStart="@drawable/ic_city"
+                                    android:drawableTint="@color/colorWhite"
+                                    android:drawablePadding="5dp"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="18sp"
+                                    tools:text="@tools:sample/cities" />
+
+                                <TextView
+                                    android:id="@+id/website"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:autoLink="web"
+                                    android:linksClickable="true"
+                                    android:drawableStart="@drawable/ic_website"
+                                    android:drawablePadding="5dp"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="18sp"
+                                    tools:text="Locart-me.com" />
+
+                                <TextView
+                                    android:id="@+id/looking_for"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:drawableStart="@drawable/ic_looking"
+                                    android:drawablePadding="5dp"
+                                    android:maxLines="1"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="18sp"
+                                    tools:text="Looking For" />
+
+                                <TextView
+                                    android:id="@+id/donate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:drawableStart="@drawable/ic_donation"
+                                    android:drawablePadding="5dp"
+                                    android:maxLines="1"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="18sp"
+                                    tools:text="Ready To Donate" />
+
+                                <TextView
+                                    android:id="@+id/about"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="18sp"
+                                    tools:text="This is the about section with very long text view to show the length required" />
+
+                            </LinearLayout>
+
+                            <!-- edit profile and settings tab -->
+                            <LinearLayout
+                                android:id="@+id/settingsEditProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/colorBlack"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvEditProfile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/edit_profile"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="20sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvSettings"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/settings"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- share profile tab -->
+                <LinearLayout
+                    android:id="@+id/linearLayoutShareProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@color/colorBlack"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card_view"
+                    app:layout_constraintVertical_chainStyle="spread"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvShareProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/share_profile"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

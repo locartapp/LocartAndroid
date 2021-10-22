@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDeadBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSwipeImageGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false">
+
+            <com.yuyakaido.android.cardstackview.CardStackView
+                android:id="@+id/cardStackViewNavigationSwipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false">
+
+            </com.yuyakaido.android.cardstackview.CardStackView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/rippleSwipeAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rb_color="@color/colorAccent"
+        app:rb_duration="3000"
+        app:rb_radius="50dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="8">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageRippleSwipeUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageRippleSwipeUser"
+            android:layout_centerHorizontal="true"
+            android:text="Finding cards near you..."
+            android:textColor="@color/colorGray"
+            android:textSize="16sp" />
+    </com.skyfishjy.library.RippleBackground>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSwipeEmptyGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/we_couldn_t_find_any_cards_nearby"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

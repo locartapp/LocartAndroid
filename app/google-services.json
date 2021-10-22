@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "972964643886",
+    "project_id": "locart-app",
+    "storage_bucket": "locart-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972964643886:android:daa462ce3e79c35c5e8bbf",
+        "android_client_info": {
+          "package_name": "com.locart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972964643886-cm5jv8vvt8rlroh23f2vkdu0omqpoe4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKPwEJJEtSChvaNKlq479HHESS_zgOQj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972964643886-cm5jv8vvt8rlroh23f2vkdu0omqpoe4v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

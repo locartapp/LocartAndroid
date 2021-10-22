@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="initial_slider_age">
+        <item>16</item>
+        <item>130</item>
+    </array>
+    <array name="initial_slider_distance">
+        <item>0</item>
+        <item>200</item>
+    </array>
+</resources>

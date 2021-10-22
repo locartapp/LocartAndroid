@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutUsersItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--  card view to hold all major details-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="25dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintVertical_chainStyle="spread"
+                app:layout_constraintVertical_weight="1">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/no_image"
+                    android:scaleType="centerCrop" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/swipe_shadow" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Name, Nexus, Job -->
+                    <LinearLayout
+                        android:id="@+id/layoutTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_above="@+id/layoutBottom"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                tools:text="@tools:sample/full_names" />
+
+                            <TextView
+                                android:id="@+id/Username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/colorWhite"
+                                android:ellipsize="end"
+                                android:textSize="23sp"
+                                android:textStyle="bold"
+                                tools:text=" @JaceMathewnnbbbbb" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/nexus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/nexus_mini"
+                            android:drawablePadding="5dp"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp"
+                            tools:text="@tools:sample/avatars" />
+
+                        <TextView
+                            android:id="@+id/job"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_job"
+                            android:drawablePadding="5dp"
+                            android:gravity="start"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            tools:text="Software Developer" />
+
+                    </LinearLayout>
+
+                    <!-- city, education, about -->
+                    <LinearLayout
+                        android:id="@+id/layoutBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/education"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:drawableStart="@drawable/ic_education"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            tools:text="Geology and mineral science with mine" />
+
+                        <TextView
+                            android:id="@+id/city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:drawableStart="@drawable/ic_city"
+                            android:drawableTint="@color/colorWhite"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            tools:text="@tools:sample/cities" />
+
+
+                        <TextView
+                            android:id="@+id/website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:autoLink="web"
+                            android:drawableStart="@drawable/ic_website"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            tools:text="Locart.me" />
+
+                        <TextView
+                            android:id="@+id/looking_for"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:drawableStart="@drawable/ic_looking"
+                            android:drawablePadding="5dp"
+                            android:maxLines="1"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            tools:text="Looking For" />
+
+                        <TextView
+                            android:id="@+id/donate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:drawableStart="@drawable/ic_donation"
+                            android:drawablePadding="5dp"
+                            android:maxLines="1"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            tools:text="Ready To Donate" />
+
+                        <TextView
+                            android:id="@+id/about"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:autoLink="web"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            tools:text="This is the about section with very long text view to show the length required" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- share profile and block user tab -->
+
+            <!-- mute account -->
+            <LinearLayout
+                android:id="@+id/lLSwipeMuteSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlack"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view"
+                app:layout_constraintVertical_chainStyle="spread"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvShareAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/share_profile"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvBlockAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/block_user"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMuteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/mute_account"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- later -->
+    <FrameLayout
+        android:id="@+id/left_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/swipe_later" />
+
+    </FrameLayout>
+
+    <!-- Link -->
+    <FrameLayout
+        android:id="@+id/right_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/swipe_link" />
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+   
+
+

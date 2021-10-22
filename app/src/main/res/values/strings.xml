@@ -1,0 +1,220 @@
+
+<resources>
+    <string name="app_name">Locart</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="login">Login</string>
+    <string name="Seller">Seller</string>
+    <string name="Buyer">Buyer</string>
+    <string name="email">Email</string>
+    <string name="email_username">Email</string>
+    <string name="password">Password</string>
+    <string name="gps_network_not_enabled">Location services not enabled</string>
+    <string name="open_location_settings">Open location services</string>
+    <string name="Cancel">Cancel</string>
+    <string name="nexus">Connections</string>
+    <string name="new_connections">New Connections</string>
+    <string name="no_connections_to_show">No connections to show</string>
+    <string name="no_messages_to_show">No messages to show</string>
+    <string name="message">message…</string>
+    <string name="accountType">Account Type :</string>
+    <string name="job">Designation, Job or Speciality</string>
+    <string name="age">Age</string>
+    <string name="phone">Phone</string>
+    <string name="about">About</string>
+    <string name="name">Account name</string>
+    <string name="Shorter_name">A shorter name looks good on your swipecard</string>
+    <string name="interested_in">INTERESTED IN :</string>
+    <string name="search_distance">SEARCH DISTANCE :</string>
+    <string name="logout">LOGOUT</string>
+    <string name="information">INFORMATION</string>
+    <string name="information_read"><![CDATA["<b>HELP</b>:
+
+<p> In case of emergency call your country emergency helpline number.</p>
+
+<p><b>SAFETY</b>:</p>
+
+<p> Whenever you are about to meet someone new in person, meet them at a place where you feel comfortable & safe or a place where you are safe in the view of CCTV cameras also take a selfie, image or a video for safety purposes.</p>
+
+<p> If you are meeting someone regarding the business purpose, always meet at a shop, or public place.</p>
+
+<p> Locart advises you never to use Locart App while you yourself are riding, driving, sailing or flying any kind of vehicle & also while crossing roads. Always follow the basic safety rules while using the Locart App.</p>
+
+<p><b>NOTICE</b>:</p>
+
+<p> Always cooperate with law authorities & follow the Internet Law, Information Technology Act or Law of your country while using the Locart App.</p>
+
+<p><b>ATTENTION</b>:</p>
+
+<p> This app is currently in beta testing phase.</p> "]]></string>
+
+    <string name="Version">Locart V 21.7</string>
+    <string name="profile_image">Profile image</string>
+    <string name="no_more_accounts_to_show">No more cards to show…</string>
+    <string name="forgot_password">Forgot Password or Verify Email</string>
+    <string name="register">Register</string>
+    <string name="edit">Edit</string>
+    <string name="settings">Settings</string>
+    <string name="chat_s_name">Chat\'s Name</string>
+    <string name="chat_message">Chat Message</string>
+    <string name="match_s_name">Match\'s Name</string>
+    <string name="text">Text</string>
+    <string name="tab">Tab</string>
+    <string name="both">All</string>
+    <string name="Shop">Shop</string>
+    <string name="Renter">Renter</string>
+    <string name="education">Education</string>
+    <string name="education_details">Add education</string>
+    <string name="backButton">Back button</string>
+    <string name="company">Company</string>
+    <string name="city">City</string>
+    <string name="city_details">Add City</string>
+    <string name="website">Website</string>
+    <string name="website_details">Add Website</string>
+    <string name="deleteAccount">DELETE ACCOUNT</string>
+    <string name="Update">Update</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+
+
+    <string name="Warning">Strictly 18 years and above only</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="dateOFBirth">Date of birth :</string>
+    <string name="link">locart.me</string>
+    <string name="nextupdate">Available in next update…</string>
+    <string name="userEmail">Email :</string>
+    <string name="sendLink">Send Link</string>
+    <string name="userAge">Age :</string>
+    <string name="at">at</string>
+    <string name="seen">👁</string>
+    <string name="updateEmailButton">UPDATE EMAIL</string>
+    <string name="submitNewEmail">Send email verification</string>
+    <string name="NewEmail">Enter new email</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NewEmailWarning">Before submitting make sure you have access to this new email address, you wont be able to login with your old email address later.</string>
+    <string name="field_email">Email</string>
+    <string name="dbname_users">Users</string>
+    <!-- dialog names -->
+    <string name="confirm_password_dialog">ConfirmPaswordDialog</string>
+    <string name="rationale_location_storage">Permissions are required for storage and location to continue</string>
+    <string name="rationale_audio_storage">Permissions are required for audio and storage to continue</string>
+    <string name="rationale_camera_storage">Permissions are required for camera and storage to continue</string>
+    <string name="add">Add</string>
+    <string name="birthday">Birthday</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="err_msg_password_confirm">Password Mismatch</string>
+    <string name="next">Send Verification Email</string>
+    <string name="verify_and_register">Verify and Register</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="full_name">Full Name</string>
+    <string name="km">km</string>
+    <string name="updatePhoneButton">UPDATE MOBILE NUMBER</string>
+    <string name="rationale_storage">Access to storage is needed. Please grant it to continue</string>
+
+    <string name="renter_prompt">Select an option</string>
+    <string name="none">None</string>
+    <string name="ready_to_donate">Ready to donate</string>
+    <string name="ready_to_accept">Ready to accept</string>
+    <string name="donation">Donation</string>
+    <string name="account_type">Account type</string>
+    <string name="job_details">Add designation, job or speciality</string>
+    <string name="about_section">About yourself in short…</string>
+    <string name="enter_username">Alphanumeric only</string>
+    <string name="company_details">Add company</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="setAge">SET AGE:</string>
+    <string name="ghost_mode">GHOST MODE</string>
+    <string name="location_mode">LOCATION MODE</string>
+    <string name="fetch">FETCH:</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="uploading_a_profile_image_is_mandatory">Uploading a profile image is mandatory</string>
+    <string name="click_on_profile_image_to_update">Click on profile image to update</string>
+    <string name="delete_account"><![CDATA["This action will delete your account permanently. "]]></string>
+    <string name="delete_your_account">Delete Your Account</string>
+    <string name="delete_account_permanently">Delete account permanently</string>
+    <string name="delete_text_one"><![CDATA[This action will update the new email on this account &
+    you will lose access to this account until you verify your new email & login again.
+    You may lose access to your account if you enter an incorrect new email address or if you
+    forgot your updated new email address or username if any.]]></string>
+    <string name="enterEmailAgain">Re-enter new email</string>
+    <string name="update_email">Update Email</string>
+    <string name="update_mobile_number">Change Mobile Number</string>
+    <string name="share_profile">Share Account</string>
+    <string name="block_user">Block Account</string>
+    <string name="we_couldn_t_find_any_cards_nearby">We couldn’t find any cards nearby, change search distance radius or try again later.</string>
+    <string name="send_password_reset_mail">Send password reset or verification mail</string>
+    <string name="date">Date</string>
+    <string name="contentdescription">contentDescription</string>
+    <string name="mute_account">Mute Account</string>
+    <string name="search_chat">Chat Search</string>
+    <string name="_0">0</string>
+    <string name="hold_for_video_tap_for_photo">Hold for video, tap for photo</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string-array name="renter_arrays">
+        <item>Car</item>
+        <item>Broker</item>
+        <item>Driver</item>
+        <item>Helper</item>
+        <item>Guide</item>
+        <item>Donor</item>
+        <item>Buyer</item>
+        <item>Seller</item>
+        <item>Renter</item>
+        <item>Shop</item>
+        <item>Teacher</item>
+        <item>Trainer</item>
+        <item>Organiser</item>
+        <item>Doctor</item>
+        <item>Security</item>
+    </string-array>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="voice_message_is_short_toast">Voice Message is Too Short</string>
+    <string name="new_connection">New Connection</string>
+    <string name="new_chat">New Chat</string>
+    <string name="donation_search">Donation Search:</string>
+    <string name="fetching">Fetching:</string>
+    <string name="looking_for">Looking For:</string>
+    <string name="verify">Verify</string>
+    <string name="send_code">Send Code</string>
+    <string name="verification_code">Verification code</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string-array name="looking_for">
+        <item>None</item>
+        <item>Ambulance Service</item>
+        <item>Caretaker</item>
+        <item>Delivery Person</item>
+        <item>Employees</item>
+        <item>Family Doctor</item>
+        <item>Guide</item>
+        <item>Health Insurance</item>
+        <item>Hostel</item>
+        <item>Jobs</item>
+        <item>Medical Assistance</item>
+        <item>Nurse Assistance</item>
+        <item>Pharmacy</item>
+        <item>Shop</item>
+        <item>Urgent Buyer</item>
+        <item>Urgent Renter</item>
+    </string-array>
+
+    <string name="photo">Photo</string>
+    <string name="welcome_to_Locart">Welcome to Locart</string>
+    <string name="proceed">PROCEED TO LOGIN</string>
+    <string name="instruction_first"><![CDATA[1. Open your email & click on the email verification link. Ignore if already done.]]></string>
+    <string name="instruction_second">2. Swipe right on a profile swipecard to Link(Like).</string>
+    <string name="instruction_third">3. Swipe left on a profile swipecard to Later(Unlike).</string>
+    <string name="instruction_fourth">4. Swipe left on a profile swipecard to Unlink(Disconnect) a connection.</string>
+    <string name="instruction_fifth">5. If you did not received any verification email, then on login page click on "<b>Forgot Password or Verify Email</b>" button &amp; submit your email to get a new verification link.</string>
+    <string name="suggest_all">Locart suggests you to fetch everyone around you</string>
+    <string name="Shop_info"><![CDATA[A Shop swipecard is public & is publicly auto connected.]]></string>
+    <string name="warn_all">Locart warns you not to use this service if not required</string>
+    <string name="resend_verification_note">If you did not received any verification email then on login, click on "<b>Forgot Password or Verify Email</b>" button &amp; submit your email to get a new verification link.</string>
+
+</resources>

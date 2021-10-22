@@ -1,0 +1,95 @@
+package com.locart.Utils;
+
+public class Constants {
+
+    public static final String USER_UID = "uid";
+    public static final String FIRE_STORE_COLLECTION = "users";
+    public static final String NAME = "name";
+    public static final String EMAIL = "email";
+    public static final String SEX = "sex";
+    public static final String ABOUT = "about";
+    public static final String JOB = "job";
+    public static final String COMPANY = "company";
+    public static final String EDUCATION = "education";
+    public static final String CITY = "city";
+    public static final String WEBSITE = "website";
+    public static final String STATE = "state";
+    public static final String DATE_OF_BIRTH = "dob";
+    public static final String AGE = "age";
+    public static final String LONGITUDE = "longitude";
+    public static final String LATITUDE = "latitude";
+    public static final String LOOKING = "looking";
+    public static final String IMAGE = "image";
+    public static final String NEXUS = "nexus";
+    public static final String USERNAME = "username";
+    public static final String MOBILE_NUMBER = "mobile_number";
+
+    public static final String DONATE = "donate";
+    public static final String FETCH = "fetch";
+    public static final String DONATE_HOW = "donate_how";
+    public static final String FETCH_HOW = "fetch_how";
+    public static final String GHOST_MODE = "ghost_mode";
+    public static final String LOCATION_MODE = "location_mode";
+    public static final String UNLINK = "Unlink";
+    public static final String LATER = "Later";
+    public static final String LINK = "Link";
+    public static final String MATCH = "Match";
+    public static final String CHATS = "Chats";
+    public static final String LIKE = "Like";
+    public static final String BLOCK = "Block";
+    public static final String AGE_MINIMUM = "age_minimum";
+    public static final String AGE_MAXIMUM = "age_maximum";
+    public static final String DISTANCE_MINIMUM = "distance_minimum";
+    public static final String DISTANCE_MAXIMUM = "distance_maximum";
+    public static final String JOINED_DATE = "joined_date";
+    public static final String LOOKING_FOR = "looking_for";
+    public static final String PASSWORD = "password";
+
+    //for registration
+    public static final String USER_NAME = "name";
+    public static final String USER_EMAIL = "email";
+    public static final String USER_SEX = "sex";
+    public static final String USER_IMAGE = "z_image";
+    public static final String USER_ID = "user_id";
+    public static final String USER_DATE_OF_BIRTH = "date_of_birth";
+    public static final String USER_AGE = "user_age";
+    public static final String USER_DATE_REGISTRATION = "date_registration";
+    public static final String USER_TIME_REGISTRATION = "time_registration";
+    public static final String USER_CITY = "user_city";
+    public static final String USER_WEBSITE = "user_website";
+    public static final String USER_STATE = "user_state";
+    public static final String USER_COUNTRY = "user_country";
+    public static final String USER_LOCATION = "user_location";
+    public static final String USER_PHONE = "user_phone";
+    public static final String USER_EDUCATION = "user_education";
+    public static final String USER_JOB = "user_job";
+    public static final String USER_COMPANY = "user_company";
+    public static final String USER_STATUS = "user_status";
+    public static final String USER_USERNAME = "user_username";
+    public static final String USER_ABOUT = "user_about";
+    public static final String USER_LATITUDE = "user_latitude";
+    public static final String USER_LONGITUDE = "user_longitude";
+    public static final String USER_LOOKING = "user_looking";
+    public static final String USER_ONLINE = "user_online";
+    public static final String USER_JOINED = "user_joined";
+    public static final String USER_VERIFIED = "user_verified";
+    public static final String USER_PREMIUM = "user_premium";
+
+    public static final String ALERT_CHATS = "alert_chats";
+    public static final String ALERT_MATCH = "alert_match";
+    public static final String ALERT_GHOST_MODE = "alert_ghost_mode";
+    public static final String ALERT_LOCATION_MODE = "alert_location_mode";
+    public static final String SHOW_FEEDS = "show_feeds";
+    public static final String SHOW_STATUS = "show_status";
+    public static final String USER_DONATE = "user_donate";
+    public static final String USER_FETCH = "user_fetch";
+    public static final String USER_FETCH_HOW = "user_fetch_how";
+    public static final String USER_DONATE_HOW = "user_donate_how";
+    public static final String USER_NEXUS = "user_nexus";
+    public static final String AGE_MIN = "age_min";
+    public static final String AGE_MAX = "age_max";
+    public static final String DISTANCE_MIN = "distance_min";
+    public static final String DISTANCE_MAX = "distance_max";
+    public static final String USER_LOOKING_FOR = "looking_for";
+    public static final String USER_DEVICE = "user_device";
+}

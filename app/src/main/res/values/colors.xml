@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#7E1033</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorGray">#767676</color>
+    <color name="colorGrayLight">#e9e9e9</color>
+    <color name="colorDeadBackground">#F7F6FB</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#2d2d2d</color>
+
+    <color name="crimson">#cc3332</color>
+    <color name="avacado">#649940</color>
+    <color name="argent">#c0c0c0</color>
+    <color name="azure">#4068b1</color>
+    <color name="amber">#ffcc05</color>
+    <color name="midnight">#211f5e</color>
+    <color name="colorText">#dddddd</color>
+    <color name="lightblue500">#03a9f4</color>
+    <color name="dark">#FF222222</color>
+    <color name="colorNotification">#03A9F4</color>
+    <color name="colorGrey">#e8e8e8</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:padding="10dp"
+    app:cardElevation="0dp">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/roundedImageViewChatsItemChatsImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/no_image"
+        app:riv_corner_radius="70dp"
+        app:riv_mutate_background="true"
+        app:civ_border_width="6dp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewChatsItemChatsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/roundedImageViewChatsItemChatsImage"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="@tools:sample/full_names" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewChatsItemChatsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/textViewChatsItemChatsName"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/roundedImageViewChatsItemChatsImage"
+        android:maxLines="1"
+        android:text="@string/message"
+        android:textColor="@color/colorGray"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/voice_note_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/textViewChatsItemChatsName"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/roundedImageViewChatsItemChatsImage"
+        android:maxLines="1"
+        android:src="@drawable/ic_mic"
+        android:visibility="gone"
+        android:tint="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/textViewChatsItemChatsName"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/roundedImageViewChatsItemChatsImage"
+        android:maxLines="1"
+        android:src="@drawable/ic_image"
+        android:visibility="gone"
+        android:tint="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewImageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/textViewChatsItemChatsName"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/image_view_icon"
+        android:maxLines="1"
+        android:text="@string/photo"
+        android:visibility="gone"
+        android:textColor="@color/colorGray"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewChatsItemChatsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="10dp"
+        android:text="@string/date"
+        android:textColor="@color/colorGray"
+        android:textSize="14sp"
+        tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+
+</RelativeLayout>
