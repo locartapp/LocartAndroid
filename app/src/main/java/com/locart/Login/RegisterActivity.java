@@ -471,6 +471,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     compressImage(imagePath);
                     Log.d(TAG, "debugging...");
 
+                    //create folder if absent
+                    File file = new File(Environment.getExternalStorageDirectory() + "/Locart/Image");
+                    if (!file.exists()) {
+                        boolean res = file.mkdirs();
+                    }
+
                     convertedImage = BitmapFactory.decodeFile(PATH);
 
                     mProfileImage.setImageBitmap(convertedImage);
